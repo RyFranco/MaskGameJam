@@ -35,7 +35,7 @@ public class ResourceManager : MonoBehaviour
         return true;
     }
 
-    bool spendInfluence(int amt)
+    public bool spendInfluence(int amt)
     {
         if (influence - amt < 0)
         {
@@ -48,18 +48,18 @@ public class ResourceManager : MonoBehaviour
         return true;
     }
 
-    void gainInfluence(int amt)
+    public void gainInfluence(int amt)
     {
         influence += amt;
         influenceDisplayLabel.text = "Influence:" + influence;
     }
 
-    int getInfluence()
+    public int getInfluence()
     {
         return influence;
     }
 
-    int getMuxs()
+    public int getMuxs()
     {
         return muxs;
     }
