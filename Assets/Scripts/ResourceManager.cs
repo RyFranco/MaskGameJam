@@ -1,12 +1,13 @@
 using UnityEngine;
+using TMPro;
 
 public class ResourceManager : MonoBehaviour
 {
     public static ResourceManager Instance { get; private set; }
     [SerializeField] int muxs = 0;
     [SerializeField] int influence = 0;
-        
-
+    public TMP_Text muxsDisplayLabel;
+    public TMP_Text influenceDisplayLabel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -26,10 +27,11 @@ public class ResourceManager : MonoBehaviour
 
     }
 
-    bool editMuxsAndReturn(int amt)
+    public bool editMuxsAndReturn(int amt)
     {
         if (muxs + amt < 0) return false;
         muxs += amt;
+        muxsDisplayLabel.text = "Muxs:" + muxs;
         return true;
     }
 
@@ -42,17 +44,19 @@ public class ResourceManager : MonoBehaviour
         }
 
         influence -= amt;
+        influenceDisplayLabel.text = "Influence:" + influence;
         return true;
     }
 
-    void gainInfulence(int amt)
+    void gainInfluence(int amt)
     {
         influence += amt;
+        influenceDisplayLabel.text = "Influence:" + influence;
     }
 
     int getInfluence()
     {
-        return influence;   
+        return influence;
     }
 
     int getMuxs()
@@ -64,4 +68,5 @@ public class ResourceManager : MonoBehaviour
     {
 
     }
+
 }
