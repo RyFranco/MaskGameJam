@@ -6,6 +6,7 @@ public class Line : MonoBehaviour
     public Transform[] lineNodes;
     private Queue<Customer> customersQueue = new Queue<Customer>();
     public int amountOfCustomerInLine;
+    private bool customerWaiting = false;
 
     public void AddCustomer(Customer customer)
     {
@@ -16,7 +17,10 @@ public class Line : MonoBehaviour
 
     public void RemoveFrontCustomer()
     {
-        if(customersQueue.Count == 0) return; 
+        Debug.Log($" {!customerWaiting}");
+        if(customersQueue.Count == 0 || !customerWaiting) return; 
+
+        Debug.Log("We in here");
 
         customersQueue.Peek().LeaveStore();
         customersQueue.Dequeue();
@@ -35,6 +39,23 @@ public class Line : MonoBehaviour
 
             customer.MoveTo(lineNodes[temp].position);
             temp++;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Customer"))
+        {
+            Debug.Log("HIHIHIHI");
+            customerWaiting = true;
+        }
+    }
+    
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.CompareTag("Customer"))
+        {
+            customerWaiting = false;
         }
     }
     
