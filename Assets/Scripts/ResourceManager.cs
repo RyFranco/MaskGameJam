@@ -6,8 +6,14 @@ public class ResourceManager : MonoBehaviour
     public static ResourceManager Instance { get; private set; }
     [SerializeField] int muxs = 0;
     [SerializeField] int influence = 0;
+    [SerializeField] int mask = 0;
+    
+
     public TMP_Text muxsDisplayLabel;
     public TMP_Text influenceDisplayLabel;
+    public TMP_Text maskDisplayLabel;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -19,6 +25,10 @@ public class ResourceManager : MonoBehaviour
         }
 
         Instance = this;
+
+        muxsDisplayLabel.text = "Muxs: " + muxs;
+        influenceDisplayLabel.text = "Influence: " + influence;
+        maskDisplayLabel.text = "Mask: " + mask;
     }
 
     // Update is called once per frame
@@ -31,7 +41,7 @@ public class ResourceManager : MonoBehaviour
     {
         if (muxs + amt < 0) return false;
         muxs += amt;
-        muxsDisplayLabel.text = "Muxs:" + muxs;
+        muxsDisplayLabel.text = "Muxs: " + muxs;
         return true;
     }
 
@@ -44,14 +54,14 @@ public class ResourceManager : MonoBehaviour
         }
 
         influence -= amt;
-        influenceDisplayLabel.text = "Influence:" + influence;
+        influenceDisplayLabel.text = "Influence: " + influence;
         return true;
     }
 
     public void gainInfluence(int amt)
     {
         influence += amt;
-        influenceDisplayLabel.text = "Influence:" + influence;
+        influenceDisplayLabel.text = "Influence: " + influence;
     }
 
     public int getInfluence()
