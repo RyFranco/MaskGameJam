@@ -31,9 +31,9 @@ public class Customer : MonoBehaviour
 
     public async void LeaveStore()
     {
-        MoveTo(new Vector3(0.780099988f,-0.289000005f,-0.0289999843f));
+        MoveTo(new Vector3(8.46f,-2.36f,0));
         GetComponent<SpriteRenderer>().flipX = false;
-        await Task.Delay(2700);
+        await Task.Delay(6000);
         if (this != null && gameObject !=null)
         {
             Destroy(gameObject);
