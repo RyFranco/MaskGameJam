@@ -18,7 +18,7 @@ public class Line : MonoBehaviour
     {
         if(customersQueue.Count == 0) return; 
 
-        customersQueue.Peek().MoveTo(new Vector3(0.780099988f,-0.289000005f,-0.0289999843f));
+        customersQueue.Peek().LeaveStore();
         customersQueue.Dequeue();
         amountOfCustomerInLine--;
 

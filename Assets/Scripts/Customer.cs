@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+
 
 public class Customer : MonoBehaviour
 {
@@ -25,6 +27,13 @@ public class Customer : MonoBehaviour
             transform.position = targetPosition;
             hasTarget = false;
         }
+    }
+
+    public async void LeaveStore()
+    {
+        MoveTo(new Vector3(0.780099988f,-0.289000005f,-0.0289999843f));
+        await Task.Delay(3000);
+        Destroy(gameObject);
     }
 
     
