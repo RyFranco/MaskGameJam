@@ -19,7 +19,7 @@ public class Customer : MonoBehaviour
     {
         if(!hasTarget) return;
 
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 0.5f * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 1.5f * Time.deltaTime);
 
 
         if(Vector3.Distance(transform.position, targetPosition) < 0.05)
@@ -32,8 +32,12 @@ public class Customer : MonoBehaviour
     public async void LeaveStore()
     {
         MoveTo(new Vector3(0.780099988f,-0.289000005f,-0.0289999843f));
-        await Task.Delay(3000);
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().flipX = false;
+        await Task.Delay(2700);
+        if (this != null && gameObject !=null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     
