@@ -19,7 +19,7 @@ public class Customer : MonoBehaviour
     {
         if(!hasTarget) return;
 
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 1.5f * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 2f * Time.deltaTime);
 
 
         if(Vector3.Distance(transform.position, targetPosition) < 0.05)
