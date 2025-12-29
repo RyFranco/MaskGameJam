@@ -23,4 +23,4 @@ MonoBehaviour:
   passiveMask: 0
   prereqs:
   - {fileID: 11400000, guid: 9e7c1a8ef5f7a4d4baea99be329b9f70, type: 2}
-  Description: '25% chance to not consume a Mask when selling [Cost: 40 Influence]'
+  Description: '25% chance not to consume Mask when sold [Cost: 40 Influence]'

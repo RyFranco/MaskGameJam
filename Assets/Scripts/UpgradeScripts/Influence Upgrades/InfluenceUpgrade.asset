@@ -22,4 +22,4 @@ MonoBehaviour:
   lowerClickRate: 0
   passiveMask: 0
   prereqs: []
-  Description: 'Influence per Mask sold +1   [Cost: 20 Influence]'
+  Description: 'Influence per Mask sold +1 [Cost: 20 Influence]'
