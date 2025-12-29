@@ -31,11 +31,7 @@ public class UpgradePanelScript : MonoBehaviour
         UpgradeCostText.text = "$" + MuxCost;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     public void TryToPurchase()
     {
@@ -60,7 +56,7 @@ public class UpgradePanelScript : MonoBehaviour
         InfluenceCost *=2;
         MuxCost *=2;
         UpgradeCostText.text = "$" + MuxCost;
-        GameObject.Find("GameManager").GetComponent<CustomerSpawner>().ChangeDemand(1);
+        ResourceManager.Instance.Demand += 0.05f;
     }
 
 }

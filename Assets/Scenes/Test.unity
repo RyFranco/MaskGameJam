@@ -426,10 +426,10 @@ RectTransform:
   - {fileID: 273353754}
   m_Father: {fileID: 1350221849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -340}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107374335
 MonoBehaviour:
@@ -3207,10 +3207,10 @@ RectTransform:
   - {fileID: 1308989933}
   m_Father: {fileID: 1350221849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 790, y: -120}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1208763634
 MonoBehaviour:
@@ -4049,7 +4049,7 @@ MonoBehaviour:
   muxs: 999
   influence: 999
   mask: 0
-  Demand: 5
+  Demand: 1
   passiveInfluence: 0
   muxUpgradeBonus: 0
   influenceUpgradeBonus: 0
@@ -4389,10 +4389,10 @@ RectTransform:
   - {fileID: 707034853}
   m_Father: {fileID: 1350221849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -120}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495287432
 MonoBehaviour:
@@ -4406,7 +4406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f375eec1edfae44387e4705e2ccaa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpgradeName: 'COOL SHIT '
+  UpgradeName: ' Ads'
   UpgradeCount: 0
   baseInfluenceCost: 0
   baseMuxCost: 1
@@ -4836,7 +4836,7 @@ RectTransform:
   m_GameObject: {fileID: 1599909182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0608761, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1794775076}
@@ -4972,7 +4972,7 @@ AudioSource:
   m_Resource: {fileID: 8300000, guid: ee174d5c153cdc84abd73368f1538fb5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
-  m_Pitch: 1
+  m_Pitch: -0.71
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -5360,7 +5360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1677633893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5471,7 +5471,7 @@ RectTransform:
   m_GameObject: {fileID: 1794775075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4852305, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599909183}
@@ -5501,7 +5501,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- - - '
+  m_text: 'Open Tablet
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5566,7 +5568,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -51.265953, y: 0, z: -51.93176, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5782,7 +5784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.71, y: -4.3}
+  m_AnchoredPosition: {x: 10.22, y: -3.52}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873535136

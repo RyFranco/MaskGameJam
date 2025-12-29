@@ -9,7 +9,7 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] int muxs = 0;
     [SerializeField] int influence = 0;
     [SerializeField] int mask = 0;
-    [SerializeField] public float Demand = 1f;
+    [SerializeField] public float Demand;
     public int passiveInfluence = 0;
 
 
