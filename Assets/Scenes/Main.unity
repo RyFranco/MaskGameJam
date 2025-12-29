@@ -941,9 +941,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1368825650}
-        m_TargetAssemblyTypeName: InfluenceUpgradeManager, Assembly-CSharp
-        m_MethodName: unlockUpgrade
+      - m_Target: {fileID: 353505293}
+        m_TargetAssemblyTypeName: ButtonTooltip, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: bcde2e222eb21134da8bdf7017fd60a1, type: 2}
@@ -1004,6 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInfo: {fileID: 11400000, guid: bcde2e222eb21134da8bdf7017fd60a1, type: 2}
+  manager: {fileID: 1368825650}
 --- !u!1 &511838350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,9 +1549,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1368825650}
-        m_TargetAssemblyTypeName: InfluenceUpgradeManager, Assembly-CSharp
-        m_MethodName: unlockUpgrade
+      - m_Target: {fileID: 741248803}
+        m_TargetAssemblyTypeName: ButtonTooltip, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: aece1b2757ef3614b84a4e7db1eb1aa7, type: 2}
@@ -1611,6 +1612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInfo: {fileID: 11400000, guid: aece1b2757ef3614b84a4e7db1eb1aa7, type: 2}
+  manager: {fileID: 1368825650}
 --- !u!1 &780356810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,9 +2451,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1368825650}
-        m_TargetAssemblyTypeName: InfluenceUpgradeManager, Assembly-CSharp
-        m_MethodName: unlockUpgrade
+      - m_Target: {fileID: 1184343521}
+        m_TargetAssemblyTypeName: ButtonTooltip, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 9a341b28e1f6cfd408bc698b86785877, type: 2}
@@ -2512,6 +2514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInfo: {fileID: 11400000, guid: 9a341b28e1f6cfd408bc698b86785877, type: 2}
+  manager: {fileID: 1368825650}
 --- !u!1 &1225736352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2909,9 +2912,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1368825650}
-        m_TargetAssemblyTypeName: InfluenceUpgradeManager, Assembly-CSharp
-        m_MethodName: unlockUpgrade
+      - m_Target: {fileID: 1343950024}
+        m_TargetAssemblyTypeName: ButtonTooltip, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 8462e18606fcb264a8e08b8465c3691a, type: 2}
@@ -2972,6 +2975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInfo: {fileID: 11400000, guid: 8462e18606fcb264a8e08b8465c3691a, type: 2}
+  manager: {fileID: 1368825650}
 --- !u!1 &1350221848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,8 +3108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46db7d660bb73942878648c9a2a494a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  muxs: 999
-  influence: 999
+  muxs: 0
+  influence: 0
   mask: 0
   Demand: 1
   passiveInfluence: 0
@@ -3696,9 +3700,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1368825650}
-        m_TargetAssemblyTypeName: InfluenceUpgradeManager, Assembly-CSharp
-        m_MethodName: unlockUpgrade
+      - m_Target: {fileID: 1552596950}
+        m_TargetAssemblyTypeName: ButtonTooltip, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 571e80a84e42b154ba2a7c4dcfcb6ecc, type: 2}
@@ -3759,6 +3763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInfo: {fileID: 11400000, guid: 571e80a84e42b154ba2a7c4dcfcb6ecc, type: 2}
+  manager: {fileID: 1368825650}
 --- !u!1 &1553316269
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,9 +4655,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1368825650}
-        m_TargetAssemblyTypeName: InfluenceUpgradeManager, Assembly-CSharp
-        m_MethodName: unlockUpgrade
+      - m_Target: {fileID: 1982216119}
+        m_TargetAssemblyTypeName: ButtonTooltip, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 9e7c1a8ef5f7a4d4baea99be329b9f70, type: 2}
@@ -4713,6 +4718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInfo: {fileID: 11400000, guid: 9e7c1a8ef5f7a4d4baea99be329b9f70, type: 2}
+  manager: {fileID: 1368825650}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

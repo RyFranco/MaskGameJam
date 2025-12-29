@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
+
 
 
 public class InfluenceUpgradeManager : MonoBehaviour
@@ -31,7 +33,7 @@ public class InfluenceUpgradeManager : MonoBehaviour
     }
 
 
-    public void unlockUpgrade(InfluenceUpgrade upgrade)
+    public bool unlockUpgrade(InfluenceUpgrade upgrade)
     {
         //Debug.Log(upgrade.upgradeName);
         if (checkPrereqs(upgrade))
@@ -42,13 +44,15 @@ public class InfluenceUpgradeManager : MonoBehaviour
                 ResourceManager.Instance.spendInfluence(upgrade.influenceCost);
                 applyUpgrade(upgrade);
                 Debug.Log("Upgrade claimed!");
+                return true;
+
             }
             else
             {
                 Debug.Log("Brokey");
-
             }
         }
+        return false;
     }
 
     public void applyUpgrade(InfluenceUpgrade upgrade)
