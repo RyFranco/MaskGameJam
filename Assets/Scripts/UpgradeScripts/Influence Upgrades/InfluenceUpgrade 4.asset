@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Upgrade 1 (0)
   upgradeTier: 1
+  influenceCost: 0
+  influenceUpgrade: 0
+  muxUpgrade: 0
   prereqs:
   - {fileID: 11400000, guid: 9e7c1a8ef5f7a4d4baea99be329b9f70, type: 2}

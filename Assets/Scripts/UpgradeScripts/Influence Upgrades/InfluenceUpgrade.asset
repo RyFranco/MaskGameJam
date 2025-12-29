@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefada6c9de0b7440a1b9a0c290ea40e, type: 3}
   m_Name: InfluenceUpgrade
   m_EditorClassIdentifier: 
-  upgradeName: Upgrade 0
+  upgradeName: Influence Per Mask
   upgradeTier: 0
-  influenceCost: 1
+  influenceCost: 20
+  influenceUpgrade: 1
+  muxUpgrade: 0
   prereqs: []

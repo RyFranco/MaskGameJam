@@ -8,7 +8,7 @@ public class InfluenceUpgradeManager : MonoBehaviour
 
     public bool checkPrereqs(InfluenceUpgrade upgrade)
     {
-        Debug.Log(upgrade.prereqs.Count);
+        //Debug.Log(upgrade.prereqs.Count);
         if (upgrade.prereqs.Count > 0)
         {
             foreach (InfluenceUpgrade i in upgrade.prereqs)
@@ -27,7 +27,7 @@ public class InfluenceUpgradeManager : MonoBehaviour
 
     public void unlockUpgrade(InfluenceUpgrade upgrade)
     {
-        Debug.Log(upgrade.upgradeName);
+        //Debug.Log(upgrade.upgradeName);
         if (checkPrereqs(upgrade))
         {
             if (ResourceManager.Instance.getInfluence() >= upgrade.influenceCost)
@@ -42,7 +42,13 @@ public class InfluenceUpgradeManager : MonoBehaviour
 
             }
         }
+    }
 
+    public void applyUpgrade(InfluenceUpgrade upgrade)
+    {
+        ResourceManager.Instance.muxUpgradeBonus += upgrade.muxUpgrade;
+        ResourceManager.Instance.influenceUpgradeBonus += upgrade.influenceUpgrade;
+        Debug.Log("Upgrade applied!");
     }
 
 

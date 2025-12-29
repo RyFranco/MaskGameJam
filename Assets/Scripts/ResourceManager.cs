@@ -7,7 +7,10 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] int muxs = 0;
     [SerializeField] int influence = 0;
     [SerializeField] int mask = 0;
-    
+
+    //Player Upgrade Stats
+    public int muxUpgradeBonus = 0;
+    public int influenceUpgradeBonus = 0;
 
     public TMP_Text muxsDisplayLabel;
     public TMP_Text influenceDisplayLabel;
@@ -40,7 +43,7 @@ public class ResourceManager : MonoBehaviour
     public bool editMuxsAndReturn(int amt)
     {
         if (muxs + amt < 0) return false;
-        muxs += amt;
+        muxs += (amt + muxUpgradeBonus);
         muxsDisplayLabel.text = "Muxs: " + muxs;
         return true;
     }
@@ -60,7 +63,7 @@ public class ResourceManager : MonoBehaviour
 
     public void gainInfluence(int amt)
     {
-        influence += amt;
+        influence += (amt + influenceUpgradeBonus);
         influenceDisplayLabel.text = "Influence: " + influence;
     }
 
