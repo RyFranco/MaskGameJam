@@ -48,6 +48,25 @@ public class ResourceManager : MonoBehaviour
         return true;
     }
 
+    public bool spendMux(int amt)
+    {
+        if (muxs - amt < 0)
+        {
+            Debug.Log("Not enough for that!");
+            return false;
+        }
+
+        muxs -= amt;
+        muxsDisplayLabel.text = "Muxs: " + muxs;
+        return true;
+    }
+
+    public void gainMux(int amt)
+    {
+        muxs += (amt + muxUpgradeBonus);
+        muxsDisplayLabel.text = "Muxs: " + muxs;
+    }
+
     public bool spendInfluence(int amt)
     {
         if (influence - amt < 0)
@@ -73,7 +92,7 @@ public class ResourceManager : MonoBehaviour
         maskDisplayLabel.text = "Mask: " + mask;
     }
 
-    public bool spendMasks(int amt)
+    public bool giveCustomerMask(int amt)
     {
         if (mask - amt < 0)
         {
@@ -83,6 +102,9 @@ public class ResourceManager : MonoBehaviour
 
         mask -= amt;
         maskDisplayLabel.text = "Mask: " + mask;
+        gainInfluence(1);
+        gainMux(10);
+        
         return true;
     }
 

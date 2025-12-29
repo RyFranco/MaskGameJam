@@ -20,7 +20,7 @@ public class Line : MonoBehaviour
        
         if(customersQueue.Count == 0 || !customersQueue.Peek().frontOfLine  ) return;
 
-        if (ResourceManager.Instance.spendMasks(1))
+        if (ResourceManager.Instance.giveCustomerMask(1))
         {
             customersQueue.Dequeue().LeaveStore();
             amountOfCustomerInLine--;

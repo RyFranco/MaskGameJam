@@ -34,6 +34,7 @@ public class InfluenceUpgradeManager : MonoBehaviour
             {
                 unlockedUpgrades.Add(upgrade);
                 ResourceManager.Instance.spendInfluence(upgrade.influenceCost);
+                applyUpgrade(upgrade);
                 Debug.Log("Upgrade claimed!");
             }
             else
