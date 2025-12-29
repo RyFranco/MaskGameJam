@@ -3,9 +3,9 @@ using System.Collections;
 public class CustomerSpawner : MonoBehaviour
 {
     [SerializeField] private Line line;
-    [SerializeField] private GameObject customer;
+    [SerializeField] private GameObject[] customers;
     [SerializeField] private Transform spawnNode;
-    [SerializeField] private float Demand = 1f;
+    [SerializeField] private float Demand = 5f;
 
     private Coroutine spawnRoutine;
 
@@ -18,7 +18,7 @@ public class CustomerSpawner : MonoBehaviour
     {
         if (line.amountOfCustomerInLine < 6)
         {
-            GameObject newCustomer = Instantiate(customer, spawnNode.position, Quaternion.identity);
+            GameObject newCustomer = Instantiate(customers[Random.Range(0, customers.Length)] , spawnNode.position, Quaternion.identity);
             line.AddCustomer(newCustomer.GetComponent<Customer>());          
         }
     }
@@ -29,7 +29,6 @@ public class CustomerSpawner : MonoBehaviour
         {
             SpawnCustomer();
             yield return new WaitForSeconds(10 / Demand);
-            Demand++;
         }
     }
 

@@ -8,7 +8,8 @@ public class Customer : MonoBehaviour
     private Vector3 targetPosition;
     private bool hasTarget = false;
 
-
+    public bool frontOfLine = false;
+           
     public void MoveTo(Vector3 newPos)
     {
         targetPosition = newPos;
