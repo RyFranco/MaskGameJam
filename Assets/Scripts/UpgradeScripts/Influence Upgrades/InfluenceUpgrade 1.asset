@@ -22,4 +22,4 @@ MonoBehaviour:
   lowerClickRate: 0
   passiveMask: 0
   prereqs: []
-  Description: Mux per Mask sold +5
+  Description: 'Mux per Mask sold + [Cost: 20 Influence]'
