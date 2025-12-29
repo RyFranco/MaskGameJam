@@ -22,4 +22,4 @@ MonoBehaviour:
   lowerClickRate: 0
   passiveMask: 0
   prereqs: []
-  Description: 
+  Description: Influence per Mask sold +1

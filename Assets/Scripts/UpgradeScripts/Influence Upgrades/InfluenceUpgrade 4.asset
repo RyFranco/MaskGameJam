@@ -18,6 +18,9 @@ MonoBehaviour:
   influenceUpgrade: 0
   muxUpgrade: 0
   maskUpperBound: 4
-  passiveDemand: 0
+  passiveInfluence: 0
+  lowerClickRate: 0
+  passiveMask: 0
   prereqs:
   - {fileID: 11400000, guid: 9e7c1a8ef5f7a4d4baea99be329b9f70, type: 2}
+  Description: 25% chance to not consume a Mask when selling
