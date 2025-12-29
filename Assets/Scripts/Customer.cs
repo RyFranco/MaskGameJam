@@ -52,7 +52,7 @@ public class Customer : MonoBehaviour
 
     public async void LeaveStore()
     {
-        MoveTo(new Vector3(8.46f,-2.36f,0));
+        MoveTo(new Vector3(8.46f,-1.95f,0f));
         Mask.sprite = ResourceManager.Instance.MaskSpritesForSale[Random.Range(0,ResourceManager.Instance.MaskSpritesForSale.Count)];
 
         GetComponent<SpriteRenderer>().GetComponent<SpriteRenderer>().sortingOrder = 2;

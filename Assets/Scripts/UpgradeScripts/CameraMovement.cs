@@ -4,8 +4,8 @@ using System.Collections;
 
 public class CameraMovement : MonoBehaviour
 {
-    Vector3 mainCamera = new Vector3(0, 1, -10);
-    Vector3 upgradeCamera = new Vector3(-14, 1, -10);
+    Vector3 mainCamera = new Vector3(0, 2, -10);
+    Vector3 upgradeCamera = new Vector3(-14, 2, -10);
     bool isMovingCamera = false;
     Vector3 target;
 
