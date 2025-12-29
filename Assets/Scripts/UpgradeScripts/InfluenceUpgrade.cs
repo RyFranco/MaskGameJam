@@ -14,4 +14,6 @@ public class InfluenceUpgrade : ScriptableObject
     public int lowerClickRate;
     public bool passiveMask;
     public List<InfluenceUpgrade> prereqs;
+    [TextArea(3,10)]
+    public string Description;
 }

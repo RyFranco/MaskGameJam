@@ -17,4 +17,9 @@ MonoBehaviour:
   influenceCost: 20
   influenceUpgrade: 1
   muxUpgrade: 0
+  maskUpperBound: 0
+  passiveInfluence: 0
+  lowerClickRate: 0
+  passiveMask: 0
   prereqs: []
+  Description: 

@@ -27,7 +27,6 @@ public class UpgradePanelScript : MonoBehaviour
     {
         InfluenceCost = baseInfluenceCost;
         MuxCost = baseMuxCost;
-        UpgradeNameText.text = UpgradeName;
         UpgradeCostText.text = "$" + MuxCost;
     }
 

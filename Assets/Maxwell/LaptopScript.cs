@@ -9,9 +9,9 @@ public class LaptopScript : MonoBehaviour
 
     [SerializeField] bool isOpen;
 
-    Vector3 OpenPosition = new Vector3(530,300,0);
+    Vector3 OpenPosition = new Vector3(530,200,0);
 
-    Vector3 ClosePosition = new Vector3(530,-250,0);
+    Vector3 ClosePosition = new Vector3(530,-300,0);
 
     Vector3 GoalPosition;
 
