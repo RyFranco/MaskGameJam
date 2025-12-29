@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using System.Data;
 
 public class ResourceManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] int influence = 0;
     [SerializeField] int mask = 0;
     [SerializeField] public float Demand = 5f;
+    public int passiveInfluence = 0;
 
 
     //Player Upgrade Stats
@@ -84,29 +86,27 @@ public class ResourceManager : MonoBehaviour
             Debug.Log("Not enough for that!");
             return false;
         }
-<<<<<<< Updated upstream
-
-        mask -= amt;
-        maskDisplayLabel.text = "Mask: " + mask;
-=======
         //Mask refund logic
         if (Random.Range(1, maskUpperBound + 1) != 4)
         {
             mask -= amt;
             maskDisplayLabel.text = "Mask: " + mask;
             gainInfluence(1);
-            gainMux(10);
+            editMuxsAndReturn(10);
             return true;
         }
         Debug.Log("Mask refunded!");
         
->>>>>>> Stashed changes
         return true;
     }
 
     public int getInfluence()
     {
         return influence;
+    }
+    public void setInfluence(int amt)
+    {
+        influence = amt;
     }
 
     public int getMuxs()

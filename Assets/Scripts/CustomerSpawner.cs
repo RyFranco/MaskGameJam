@@ -33,12 +33,12 @@ public class CustomerSpawner : MonoBehaviour
 
     public void SetDemand(int num)
     {
-        Demand = num;
+        ResourceManager.Instance.Demand = num;
     }
 
     public void ChangeDemand(int num)
     {
-        Demand += num;
+        ResourceManager.Instance.Demand += num;
     }
 
 }

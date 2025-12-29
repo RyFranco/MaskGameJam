@@ -15,6 +15,10 @@ public class Clicking : MonoBehaviour
             ResourceManager.Instance.gainMasks(1);
             totalMasks++;
             numberOfMaskClicks = 0;
-        } 
-    }    
+        }
+    }
+    public void setClicksPerMask(int numberOfMaskClicks)
+    {
+        totalClicksForMask = numberOfMaskClicks;
+    }
 }

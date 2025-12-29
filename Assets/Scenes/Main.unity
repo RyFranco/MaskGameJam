@@ -4148,12 +4148,14 @@ MonoBehaviour:
   influence: 999
   mask: 0
   Demand: 5
+  passiveInfluence: 0
   muxUpgradeBonus: 0
   influenceUpgradeBonus: 0
   maskUpperBound: 0
   muxsDisplayLabel: {fileID: 1051434317}
   influenceDisplayLabel: {fileID: 797197935}
   maskDisplayLabel: {fileID: 1508304278}
+  MaskSpritesForSale: []
 --- !u!4 &1368825648
 Transform:
   m_ObjectHideFlags: 0
@@ -4198,6 +4200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd65c09153eb4bb48836482a0d997cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anvilButton: {fileID: 1873535134}
 --- !u!1 &1428367161
 GameObject:
   m_ObjectHideFlags: 0
