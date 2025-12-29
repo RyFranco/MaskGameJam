@@ -46,7 +46,6 @@ public class UpgradePanelScript : MonoBehaviour
         ResourceManager.Instance.editMuxsAndReturn(-1 * MuxCost);
         UpgradeCount += 1;
         ChangePrice();
-        UpgradeNameText.text = UpgradeName + " +" + UpgradeCount;
 
     }
 
