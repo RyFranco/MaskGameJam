@@ -64,6 +64,25 @@ public class ResourceManager : MonoBehaviour
         influenceDisplayLabel.text = "Influence: " + influence;
     }
 
+    public void gainMasks(int amt)
+    {
+        mask += amt;
+        maskDisplayLabel.text = "Mask: " + mask;
+    }
+
+    public bool spendMasks(int amt)
+    {
+        if (mask - amt < 0)
+        {
+            Debug.Log("Not enough for that!");
+            return false;
+        }
+
+        mask -= amt;
+        maskDisplayLabel.text = "Mask: " + mask;
+        return true;
+    }
+
     public int getInfluence()
     {
         return influence;
