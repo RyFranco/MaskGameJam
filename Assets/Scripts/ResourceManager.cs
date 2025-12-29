@@ -114,6 +114,16 @@ public class ResourceManager : MonoBehaviour
         return muxs;
     }
 
+    public int getMask()
+    {
+        return mask;
+    }
+
+    public void setMask(int amt)
+    {
+        mask = amt;
+    }
+
     void resourcesUpdate()
     {
 

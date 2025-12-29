@@ -6,8 +6,11 @@ public class InfluenceUpgradeManager : MonoBehaviour
 {   
     private List<InfluenceUpgrade> unlockedUpgrades = new List<InfluenceUpgrade>();
     bool passiveUpgradeClaimed = false;
+    bool maskPassiveClaimed = false;
     float time;
-    float timeInterval = 30f;
+    float timeInterval = 15f;
+    float maskTime;
+    float maskTimeInterval = 30f;
     public GameObject anvilButton;
     public bool checkPrereqs(InfluenceUpgrade upgrade)
     {
@@ -59,12 +62,17 @@ public class InfluenceUpgradeManager : MonoBehaviour
             ResourceManager.Instance.passiveInfluence += 1;
             passiveUpgradeClaimed = true;
         }
+        if (upgrade.passiveMask && !maskPassiveClaimed)
+        {
+            maskPassiveClaimed = true;
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         time = 0f;
+        maskTime = 0f;
     }
 
     // Update is called once per frame
@@ -78,6 +86,16 @@ public class InfluenceUpgradeManager : MonoBehaviour
                 ResourceManager.Instance.setInfluence(ResourceManager.Instance.getInfluence() + 1);
                 time -= timeInterval;
                 ResourceManager.Instance.influenceDisplayLabel.text = "Influence: " + ResourceManager.Instance.getInfluence();
+            }
+        }
+        if (maskPassiveClaimed)
+        {
+            maskTime += Time.deltaTime;
+            while (maskTime >= maskTimeInterval)
+            {
+                ResourceManager.Instance.setMask(ResourceManager.Instance.getMask() + 1);
+                maskTime -= maskTimeInterval;
+                ResourceManager.Instance.maskDisplayLabel.text = "Mask: " + ResourceManager.Instance.getMask();
             }
         }
 

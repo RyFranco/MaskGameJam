@@ -12,6 +12,6 @@ public class InfluenceUpgrade : ScriptableObject
     public int maskUpperBound;
     public bool passiveInfluence;
     public int lowerClickRate;
-    public int adCostReduction;
+    public bool passiveMask;
     public List<InfluenceUpgrade> prereqs;
 }
