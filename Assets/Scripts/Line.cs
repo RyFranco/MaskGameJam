@@ -18,11 +18,17 @@ public class Line : MonoBehaviour
     public void RemoveFrontCustomer()
     {
        
-        if(customersQueue.Count == 0 || !customersQueue.Peek().frontOfLine  ) return; 
-        customersQueue.Dequeue().LeaveStore();
-        amountOfCustomerInLine--;
+        if(customersQueue.Count == 0 || !customersQueue.Peek().frontOfLine  ) return;
 
-        UpdateLinePosition();
+        if (ResourceManager.Instance.spendMasks(1))
+        {
+            customersQueue.Dequeue().LeaveStore();
+            amountOfCustomerInLine--;
+
+            UpdateLinePosition();
+        } 
+
+
     }
 
     public void UpdateLinePosition()
