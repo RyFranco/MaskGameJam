@@ -20,7 +20,7 @@ public class Line : MonoBehaviour
        
         if(customersQueue.Count == 0 || !customersQueue.Peek().frontOfLine  ) return;
 
-        if (ResourceManager.Instance.giveCustomerMask(1))
+        if (ResourceManager.Instance.spendMasks(1))
         {
             customersQueue.Dequeue().LeaveStore();
             amountOfCustomerInLine--;
@@ -40,6 +40,9 @@ public class Line : MonoBehaviour
             if(temp >= lineNodes.Length) break;
 
             customer.MoveTo(lineNodes[temp].position);
+            customer.GetComponent<SpriteRenderer>().sortingOrder = 5 + temp * 5;
+            customer.Mask.sortingOrder = 6 + temp * 5;
+
             temp++;
         }
     }

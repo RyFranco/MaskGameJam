@@ -9,11 +9,31 @@ public class Customer : MonoBehaviour
     private bool hasTarget = false;
 
     public bool frontOfLine = false;
-           
+
+    [Header("Mask Variables")]           
+    public SpriteRenderer Mask; 
+    public Vector3 facingLeftPosition;
+    public Vector3 facingRightPosition;
+
+
+
     public void MoveTo(Vector3 newPos)
     {
         targetPosition = newPos;
         hasTarget = true;
+        if(newPos.x <= transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+            Mask.flipX = true;
+            Mask.gameObject.transform.localPosition = facingLeftPosition;
+            
+        }   
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+            Mask.flipX = false;
+            Mask.gameObject.transform.localPosition = facingRightPosition;
+        }
     }
 
     void Update()
@@ -33,7 +53,12 @@ public class Customer : MonoBehaviour
     public async void LeaveStore()
     {
         MoveTo(new Vector3(8.46f,-2.36f,0));
-        GetComponent<SpriteRenderer>().flipX = false;
+        Mask.sprite = ResourceManager.Instance.MaskSpritesForSale[Random.Range(0,ResourceManager.Instance.MaskSpritesForSale.Count)];
+
+        GetComponent<SpriteRenderer>().GetComponent<SpriteRenderer>().sortingOrder = 2;
+        Mask.sortingOrder = 3;
+
+
         await Task.Delay(6000);
         if (this != null && gameObject !=null)
         {

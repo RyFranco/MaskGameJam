@@ -60,6 +60,7 @@ public class UpgradePanelScript : MonoBehaviour
         InfluenceCost *=2;
         MuxCost *=2;
         UpgradeCostText.text = "$" + MuxCost;
+        GameObject.Find("GameManager").GetComponent<CustomerSpawner>().ChangeDemand(1);
     }
 
 }
