@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefada6c9de0b7440a1b9a0c290ea40e, type: 3}
   m_Name: InfluenceUpgrade 6
   m_EditorClassIdentifier: 
-  upgradeName: Upgrade 1 (1)
+  upgradeName: Passive Masks
   upgradeTier: 1
   influenceCost: 40
   influenceUpgrade: 0

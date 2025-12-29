@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefada6c9de0b7440a1b9a0c290ea40e, type: 3}
   m_Name: InfluenceUpgrade 5
   m_EditorClassIdentifier: 
-  upgradeName: Upgrade 0 (1)
+  upgradeName: Lower Click Rate
   upgradeTier: 1
   influenceCost: 40
   influenceUpgrade: 0
@@ -20,6 +20,6 @@ MonoBehaviour:
   maskUpperBound: 0
   passiveInfluence: 0
   lowerClickRate: 5
-  adCostReduction: 0
+  passiveMask: 0
   prereqs:
   - {fileID: 11400000, guid: bcde2e222eb21134da8bdf7017fd60a1, type: 2}

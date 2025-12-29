@@ -10,7 +10,7 @@ public class InfluenceUpgradeManager : MonoBehaviour
     float time;
     float timeInterval = 15f;
     float maskTime;
-    float maskTimeInterval = 30f;
+    float maskTimeInterval = 2f;
     public GameObject anvilButton;
     public bool checkPrereqs(InfluenceUpgrade upgrade)
     {
