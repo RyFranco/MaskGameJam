@@ -19,7 +19,7 @@ MonoBehaviour:
   muxUpgrade: 0
   maskUpperBound: 0
   passiveInfluence: 0
-  lowerClickRate: 0
+  lowerClickRate: 10
   passiveMask: 1
   prereqs:
   - {fileID: 11400000, guid: bcde2e222eb21134da8bdf7017fd60a1, type: 2}

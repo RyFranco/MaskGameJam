@@ -19,7 +19,7 @@ MonoBehaviour:
   muxUpgrade: 5
   maskUpperBound: 0
   passiveInfluence: 0
-  lowerClickRate: 0
+  lowerClickRate: 10
   passiveMask: 0
   prereqs: []
   Description: 'Mux per Mask sold +5 [Cost: 20 Influence]'
