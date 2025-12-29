@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefada6c9de0b7440a1b9a0c290ea40e, type: 3}
   m_Name: InfluenceUpgrade 3
   m_EditorClassIdentifier: 
-  upgradeName: Upgrade 0 (0)
+  upgradeName: Demand Increase
   upgradeTier: 1
-  influenceCost: 3
+  influenceCost: 40
   influenceUpgrade: 0
   muxUpgrade: 0
+  maskUpperBound: 0
+  passiveDemand: 1
   prereqs:
   - {fileID: 11400000, guid: 9e7c1a8ef5f7a4d4baea99be329b9f70, type: 2}

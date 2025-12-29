@@ -8,10 +8,13 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] int muxs = 0;
     [SerializeField] int influence = 0;
     [SerializeField] int mask = 0;
+    [SerializeField] public float Demand = 5f;
+
 
     //Player Upgrade Stats
     public int muxUpgradeBonus = 0;
     public int influenceUpgradeBonus = 0;
+    public int maskUpperBound = 0;
 
     public TMP_Text muxsDisplayLabel;
     public TMP_Text influenceDisplayLabel;
@@ -38,7 +41,7 @@ public class ResourceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public bool editMuxsAndReturn(int amt)
@@ -81,9 +84,23 @@ public class ResourceManager : MonoBehaviour
             Debug.Log("Not enough for that!");
             return false;
         }
+<<<<<<< Updated upstream
 
         mask -= amt;
         maskDisplayLabel.text = "Mask: " + mask;
+=======
+        //Mask refund logic
+        if (Random.Range(1, maskUpperBound + 1) != 4)
+        {
+            mask -= amt;
+            maskDisplayLabel.text = "Mask: " + mask;
+            gainInfluence(1);
+            gainMux(10);
+            return true;
+        }
+        Debug.Log("Mask refunded!");
+        
+>>>>>>> Stashed changes
         return true;
     }
 

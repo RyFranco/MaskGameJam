@@ -9,5 +9,9 @@ public class InfluenceUpgrade : ScriptableObject
     public int influenceCost;
     public int influenceUpgrade;
     public int muxUpgrade;
+    public int maskUpperBound;
+    public bool passiveDemand;
+    //demand increase
+    //make ads cheaper
     public List<InfluenceUpgrade> prereqs;
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class InfluenceUpgradeManager : MonoBehaviour
 {   
     private List<InfluenceUpgrade> unlockedUpgrades = new List<InfluenceUpgrade>();
-
+    bool passiveUpgradeClaimed = false;
     public bool checkPrereqs(InfluenceUpgrade upgrade)
     {
         //Debug.Log(upgrade.prereqs.Count);
@@ -49,7 +49,11 @@ public class InfluenceUpgradeManager : MonoBehaviour
     {
         ResourceManager.Instance.muxUpgradeBonus += upgrade.muxUpgrade;
         ResourceManager.Instance.influenceUpgradeBonus += upgrade.influenceUpgrade;
-        Debug.Log("Upgrade applied!");
+        ResourceManager.Instance.maskUpperBound = upgrade.maskUpperBound;
+        //if (upgrade.passiveDemand && !passiveUpgradeClaimed)
+        //{
+        //    ResourceManager.Instance
+        //}
     }
 
 
@@ -64,6 +68,6 @@ public class InfluenceUpgradeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 }

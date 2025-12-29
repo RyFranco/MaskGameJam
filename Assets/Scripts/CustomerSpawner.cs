@@ -5,7 +5,6 @@ public class CustomerSpawner : MonoBehaviour
     [SerializeField] private Line line;
     [SerializeField] private GameObject[] customers;
     [SerializeField] private Transform spawnNode;
-    [SerializeField] private float Demand = 5f;
 
     private Coroutine spawnRoutine;
 
@@ -28,7 +27,7 @@ public class CustomerSpawner : MonoBehaviour
         while (true)
         {
             SpawnCustomer();
-            yield return new WaitForSeconds(10 / Demand);
+            yield return new WaitForSeconds(10 / ResourceManager.Instance.Demand);
         }
     }
 
